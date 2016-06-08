@@ -1,0 +1,133 @@
+html {
+    font-family: 'Raleway', sans-serif;
+    background: url(../backgrounds/e.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.wrapper{
+    position: relative;
+    text-align: center;
+    width:640px;
+    margin:0 auto;
+}
+.back{
+    position: absolute;
+    margin-top: 50px;
+    top:170px;
+    width:640px;
+    height: 640px;
+    z-index:0;
+    background-color: #000;
+    border-radius: 310px;
+}
+.pad {
+    width: 300px;
+    height: 300px;
+    float: left;
+    z-index: 1;
+    margin: 10px;
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+}
+.shape1 {
+    border-top-left-radius: 300px;
+    background-color: green;
+}
+.shape2 {
+    float: left;
+    border-top-right-radius: 300px;
+    background-color: red;
+    clear: right;
+}
+.shape3 {
+    float: left;
+    border-bottom-left-radius: 300px;
+    background-color: yellow;
+    clear: left;
+}
+.shape4 {
+    float: left;
+    border-bottom-right-radius: 300px;
+    background-color: blue;
+}
+.circle {
+    position: absolute;
+    top: 195px;
+    left: 195px;
+    width: 250px;
+    height: 250px;
+    background: #000;
+    border-radius: 125px;
+    z-index: 10;
+}
+.level, .score {
+    width: 60%;
+    float: left;
+    text-align: center;
+}
+.difficulty {
+    padding-top: 35px;
+    font-size: 12px;
+    font-weight: 700;
+}
+.sButton {
+    margin: 0 auto;
+    overflow: hidden;
+    min-width:100px;
+    width: auto !important;
+    width: 100px;
+}
+.reset {
+    float: right;
+}
+.start {
+    float: left;
+}
+.buttons {
+    display: inline-block;
+    padding: 20px;
+    background: #000;
+    border: 0;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 15px;
+    line-height: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+a, a:active, a:visited, a:hover {
+    text-transform: none;
+    text-decoration: none;
+}
+/*
+  Hide radio button (the round disc)
+  we will use just the label to create pushbutton effect
+*/
+input[type=radio] {
+    display:none;
+    margin:10px;
+    border: solid 1px #000000;
+}
+
+/*
+  Change the look'n'feel of labels (which are adjacent to radiobuttons).
+  Add some margin, padding to label
+*/
+input[type=radio] + label {
+    display:inline-block;
+    margin:-2px;
+    padding: 4px 12px;
+    background-color: #e7e7e7;
+    border-color: #ddd;
+    border: solid 1px #000000;
+}
+/*
+ Change background color for label next to checked radio button
+ to make it look like highlighted button
+*/
+input[type=radio]:checked + label {
+    background-image: none;
+    background-color:#A9A9A9;
+}
