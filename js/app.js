@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     $(".shape1").click(function() {
-       $("#sound1").get(0).play();
+        $("#sound1").get(0).play();
 
         var $el = $(".shape1"),
             x = 100,
